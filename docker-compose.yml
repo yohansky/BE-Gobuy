@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres_gobuy
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: gobuy
+    ports:
+      - '5434:5432'
